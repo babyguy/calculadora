@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Harold Danilo M Q" />
+    <meta name="description" content="Aprendiendo fundamentos HTML con COEX" />
+    <meta
+      name="keywords"
+      content="aprende lojica, html,
+        javascript,db,vue.js,laravel,html,coex"
+    />
+    <!-- titulo visto en la pestaña del navegador -->
+    <!-- mis importaciones -->
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <title>calculadora</title>
+  </head>
+  <body>
+    <main>
+      <section class="">
+        <div class="container mt-5 d-flex justify-content-center">
+            <h1 >calculadora basica</h1> <br>
+           <table class="table table-dark w-50 d-flex justify-content-center  ">
+            <!-- pantalla -->
+            <tr>
+                <td colspan="4" class="col-md-12">
+                    <!-- marca-->
+                    <h6>CASIO-B512</h6>
+                    <input type="text" name="" id="display" class="w-100">
+                </td>
+            </tr>
+            <!-- botnoes 7 8 9 / -->
+            <tr>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn7" onclick="obtencion('7');">7</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn8" onclick="obtencion('8');">8</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn9" onclick="obtencion('9');">9</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn/" onclick="divicion();">÷</a></td>
+            </tr>
+            <!-- botones 4 5 6 * -->
+            <tr>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn4"  onclick="obtencion('4');">4</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn5"  onclick="obtencion('5');">5</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn6"  onclick="obtencion('6');">6</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn*"  onclick="multiplicacion();">*</a></td>
+            </tr>
+            <!-- botones 1 2 3 - -->
+            <tr>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn1"  onclick="obtencion('1');">1</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn2"  onclick="obtencion('2');">2</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn3"  onclick="obtencion('3');">3</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn-"  onclick="resta();">-</a></td>
+            </tr>
+            <!-- botones 0 = C * -->
+            <tr>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn0"  onclick="obtencion('0');">0</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btnc"  onclick="clearDisplay();">C</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn="  onclick="resultado();">=</a></td>
+                <td> <a href="#" class="btn btn-outline-light" style="width: 40px;" id="btn+"  onclick="suma();">+</a></td>
+            </tr>
+           </table>
+        </div>
+      </section>
+    </main>
+    <!-- js -->
+    <script src="./index.js"></script>
+  </body>
+</html>
