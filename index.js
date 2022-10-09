@@ -1,3 +1,4 @@
+  //---Harold Danilo MQ--\\
 // asiganacion de la pantalla a una variable 
 const display = document.getElementById("display");
 // variables para ejecutar las fuinciones 
@@ -78,3 +79,5 @@ function clearDisplay() {
     display.value = "";
   }
   
+
+  //---Harold Danilo MQ--\\
